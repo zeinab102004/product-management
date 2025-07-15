@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1c1c;
+    color: white;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+    /* position: relative; */
+}
+.head{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.head h2{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.head p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: white;
+    transition: 0.5s;
+    /* position: absolute; */
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.1);
+}
+.price input{
+    width: 20%;
+}
+#total{
+     background-color: #a00d02;
+    padding:5px 2px;
+    border-radius: 4px;
+}
+ #total::before{
+    content: "Total: ";}
+
+button{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #310044;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: #51025f;
+    letter-spacing: 2px;
+}
+
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.btnSearch button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+   text-transform: uppercase;
+}
+td, th{
+    padding: 5px;
+}
+#DeleteAll{
+    margin-top: 10px;
+
+}
