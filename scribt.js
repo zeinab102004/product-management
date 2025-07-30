@@ -75,15 +75,15 @@ function cleardata() {
 function showData() {
     let table = '';
  for (let i=0; i < dataPro.length; i++) {
-    table +=`<tr>
-                        <td>${1+i}</td>
-                        <td>${dataPro[i].title}</td>
-                        <td>${dataPro[i].price}</td>
-                        <td>${dataPro[i].taxes}</td>
-                        <td>${dataPro[i].ads}</td>
-                        <td>${dataPro[i].discount}</td>
-                        <td>${dataPro[i].total}</td>
-                        <td>${dataPro[i].category}</td>
+    table +=`<tr class="product-row">
+                        <td data-label="منتج رقم">${1+i}</td>
+                        <td data-label="العنوان">${dataPro[i].title}</td>
+                        <td data-label="السعر">${dataPro[i].price}</td>
+                        <td data-label="الضرائب">${dataPro[i].taxes}</td>
+                        <td data-label="الإعلانات">${dataPro[i].ads}</td>
+                        <td data-label="الخصم">${dataPro[i].discount}</td>
+                        <td data-label="الإجمالي">${dataPro[i].total}</td>
+                        <td data-label="الفئة">${dataPro[i].category}</td>
                         <td><button onclick="upDate(${i})" class="update">update</button></td>
                         <td><button onclick="Delete(${i})" class="delete">delete</button></td>
                     </tr>`
